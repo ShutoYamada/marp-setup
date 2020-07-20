@@ -4,8 +4,4 @@
 ln -fnsv "`pwd`/User" ${HOME}/.config/Code/User
 
 # 拡張機能のインストール
-filename="./extension-list"
-cat ${filename} | while read line
-do
-  code --install-extension ${line}
-done
+code --install-extension marp-team.marp-vscode
